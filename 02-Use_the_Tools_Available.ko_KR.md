@@ -298,9 +298,9 @@ Both of these tools use coverage reporting to find new code execution paths and 
  * [LibFuzzer](http://llvm.org/docs/LibFuzzer.html)
  * [KLEE](http://klee.github.io/) - 퍼지 개별 함수를 사용할 수 있음
 
-### 제어 흐름 보호
+### 제어 흐름 가드
 
-MSVC의 [제어 흐름 보호(Control Flow Guard)](https://msdn.microsoft.com/ko-kr/library/windows/desktop/mt637065%28v=vs.85%29.aspx?f=255&MSPPError=-2147217396)는 고성능의 런타임 보안 검사를 추가합니다.
+MSVC의 [제어 흐름 가드(Control Flow Guard)](https://msdn.microsoft.com/ko-kr/library/windows/desktop/mt637065%28v=vs.85%29.aspx?f=255&MSPPError=-2147217396)는 고성능의 런타임 보안 검사를 추가합니다.
 
 ### STL 구현 확인
 
