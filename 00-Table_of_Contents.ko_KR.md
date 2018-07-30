@@ -3,7 +3,7 @@
  2. [쓸 수 있는 도구 사용하기](02-Use_the_Tools_Available.ko_KR.md)
  3. [스타일](03-Style.ko_KR.md)
  4. [안전 고려하기](04-Considering_Safety.ko_KR.md)
- 5. [Considering Maintainability](05-Considering_Maintainability.md)
+ 5. [지속가능성 고려하기](05-Considering_Maintainability.ko_KR.md)
  6. [Considering Portability](06-Considering_Portability.md)
  7. [Considering Threadability](07-Considering_Threadability.md)
  8. [Considering Performance](08-Considering_Performance.md)
