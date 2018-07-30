@@ -1,0 +1,23 @@
+# 이식성 고려하기
+
+## 네 형식(Type)을 알아라
+
+Most portability issues that generate warnings are because we are not careful about our types. Standard library and arrays are indexed with `size_t`. Standard container sizes are reported in `size_t`. If you get the handling of `size_t` wrong, you can create subtle lurking 64-bit issues that arise only after you start to overflow the indexing of 32-bit integers. char vs unsigned char.
+
+대부분 경고를 만드는 이식성 문제는 형식에 유의하지 않기 때문에 나타납니다. 표준 라이브러리와 배열은 `size_t`를 사용해서 색인합니다. 표준 컨테이너 크기는 `size_t`로 확인합니다. `size_t`를 잘못 다루면 32비트 정수형의 색인이 오버플로우 된 이후에 발생하는, 미묘하게 숨어있는 64비트 문제를 만들 수도 있습니다. char와 unsigned char 문제도 참고하세요.
+
+http://www.viva64.com/en/a/0010/
+
+## 표준 라이브러리 사용하기
+
+### `std::filesystem`
+
+C++17에 `filesystem` 라이브러리가 추가되었습니다. 이 라이브러리는 지원하는 모든 컴파일러에서 이식 가능한 파일 시스템 접근을 수행할 수 있습니다.
+
+### `std::thread`
+
+C++11에서 스레드 호환성은 `pthread` 또는 `WinThreads`를 활용해야 합니다.
+
+## 다른 문제
+
+이 문서에서 다루는 문제 대부분은 궁극적으로 이식성 문제와 연관됩니다. [정적 키워드 피하기](07-Considering_Threadability.ko_KR.md#정적)도 그 중 하나입니다.
