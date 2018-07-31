@@ -22,7 +22,7 @@ Besides being global data, statics are not always constructed and deconstructed 
 
 ## 힙(heap) 조작 피하기
 
-스레드 환경에서는 더 느립니다. 대부분의 경우에서 데이터를 복사하는 일이 더 빠릅니다. (이동과 같은 작업도 포함)
+스레드 환경에서는 더 느립니다. 대부분의 경우에서 데이터를 복사하는 일이 더 빠릅니다. (무브와 같은 작업도 포함)
 
 ## Mutex and mutable go together (M&M rule, C++11)
 
