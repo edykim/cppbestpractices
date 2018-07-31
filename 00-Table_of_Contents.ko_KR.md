@@ -9,4 +9,4 @@
  8. [성능 고려하기](08-Considering_Performance.ko_KR.md)
  9. [스크립팅 활성화하기](09-Enable_Scripting.ko_KR.md)
  10. [더 읽을 거리](10-Further_Reading.ko_KR.md)
- 11. [Final Thoughts](11-Final_Thoughts.md)
+ 11. [끝내는 말](11-Final_Thoughts.ko_KR.md)
