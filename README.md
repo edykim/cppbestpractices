@@ -14,8 +14,6 @@
 
 이 리포지터리는 [lefticus/cppbestpractices](https://github.com/lefticus/cppbestpractices)를 한국어로 번역한 리포지터리입니다.
 
-----
-
 ## 목차
 
  1. [서문](01-Preface.ko_KR.md)
