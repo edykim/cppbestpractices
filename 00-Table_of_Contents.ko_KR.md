@@ -6,7 +6,7 @@
  5. [지속가능성 고려하기](05-Considering_Maintainability.ko_KR.md)
  6. [이식성 고려하기](06-Considering_Portability.ko_KR.md)
  7. [스레드 가능성 고려하기](07-Considering_Threadability.ko_KR.md)
- 8. [Considering Performance](08-Considering_Performance.md)
+ 8. [성능 고려하기](08-Considering_Performance.ko_KR.md)
  9. [Enable Scripting](09-Enable_Scripting.md)
  10. [Further Reading](10-Further_Reading.md)
  11. [Final Thoughts](11-Final_Thoughts.md)
