@@ -7,6 +7,6 @@
  6. [이식성 고려하기](06-Considering_Portability.ko_KR.md)
  7. [스레드 가능성 고려하기](07-Considering_Threadability.ko_KR.md)
  8. [성능 고려하기](08-Considering_Performance.ko_KR.md)
- 9. [Enable Scripting](09-Enable_Scripting.md)
+ 9. [스크립팅 활성화하기](09-Enable_Scripting.ko_KR.md)
  10. [Further Reading](10-Further_Reading.md)
  11. [Final Thoughts](11-Final_Thoughts.md)
