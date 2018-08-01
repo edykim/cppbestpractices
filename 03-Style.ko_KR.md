@@ -413,7 +413,7 @@ assert(registerSomeThing()); // registerSomeThing()이 true를 반환
 * `operator>>()`와 `operator<<()` 연산자를 스트림과 함께 적용할 때는 멤버가 아닌 함수를 사용합니다. 예를 들면 `operator<<(std::ostream &, MyClass const &)`을 오버로드하는 것으로 클래스를 스트림에 "쓰는" 것이 가능합니다. `std::cout`, `std::fstream`, `std::stringstream`이 그런 방식으로 작성되었습니다. 마지막은 값의 문자열 표현을 생성하기 위해 종종 사용합니다.
 * 오버로드하는 일반적인 연산자는 [여기에 정리](http://stackoverflow.com/questions/4421706/operator-overloading?answertab=votes#tab-top)되어 있습니다.
 
-임의 생성자를 어떻게 구현하는지 세부적인 팁은 [C++ 생성자 오버로딩 가이드](http://courses.cms.caltech.edu/cs11/material/cpp/donnie/cpp-ops.html)에서 찾을 수 있습니다.
+임의 생성자를 어떻게 구현하는지 세부적인 팁은 [C++ 연산자 오버로딩 가이드라인](http://courses.cms.caltech.edu/cs11/material/cpp/donnie/cpp-ops.html) ([번역](https://www.haruair.com/blog/4582))에서 찾을 수 있습니다.
 
 ## 암시적 변환 피하기
 
