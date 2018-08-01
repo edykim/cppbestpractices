@@ -226,8 +226,6 @@ std::make_shared<ModelObject_Impl>(); // (이 코드가 더 읽기 쉽고 간결
 
 ### `shared_ptr`보다 `unique_ptr` 선호하기
 
-If possible use `unique_ptr` instead of `shared_ptr`. The `unique_ptr` does not need to keep track of its copies because it is not copyable. Because of this it is more efficient than the `shared_ptr`. Equivalent to `shared_ptr` and `make_shared` you should use `make_unique` (C++14 or greater) to create the `unique_ptr`:
-
 만약 `unique_ptr`을 `shared_ptr` 대신 사용하면 `unique_ptr`은 복사할 수 없기 때문에 복사본을 계속 추적할 필요가 없습니다. 그런 덕분에 `shared_ptr`보다 더 효과적입니다. `shared_ptr`를 `make_shared`로 사용하는데 `unique_ptr`에서는 동일한 기능을 `make_unique`로 사용할 수 있습니다 (C++14 또는 그 이상).
 
 ```cpp

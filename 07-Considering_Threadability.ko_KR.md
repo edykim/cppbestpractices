@@ -6,13 +6,9 @@
 
 ### 정적
 
-Besides being global data, statics are not always constructed and deconstructed as you would expect. This is particularly true in cross-platform environments. See for example, [this g++ bug](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=66830) regarding the order of destruction of shared static data loaded from dynamic modules.
-
 전역 데이터로 만드는 것 외에도 정적(static) 또한 기대처럼 항상 생성되고 소멸되지 않습니다. 특히 크로스 플랫폼 환경에서는 그렇습니다. 예를 들면 [이 g++ 버그](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=66830)는 동적 모듈로 불려온 공유 정적 데이터의 소멸 순서에 인해 발생한 버그입니다.
 
 ### 공유 포인터
-
-`std::shared_ptr` is "as good as a global" () because it allows multiple pieces of code to interact with the same data.
 
 `std::shared_ptr`은 ["전역 만큼 좋은데"](http://stackoverflow.com/a/18803611/29975) 동일한 자료를 여러 코드 조각에서 접근할 수 있기 때문입니다.
 
@@ -23,8 +19,6 @@ Besides being global data, statics are not always constructed and deconstructed 
 ## 힙(heap) 조작 피하기
 
 스레드 환경에서는 더 느립니다. 대부분의 경우에서 데이터를 복사하는 일이 더 빠릅니다. (무브와 같은 작업도 포함)
-
-## Mutex and mutable go together (M&M rule, C++11)
 
 ## Mutex와 가변성은 함께 간다 (M&M 규칙, C++11)
 

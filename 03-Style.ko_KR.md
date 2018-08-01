@@ -1,10 +1,6 @@
 # 스타일
 
-Consistency is the most important aspect of style. The second most important aspect is following a style that the average C++ programmer is used to reading.
-
 스타일에서 가장 중요한 면은 일관성입니다. 두번째로 중요한 점은 평균적인 C++ 프로그래머가 익숙하게 생각하는 스타일을 따르는 것입니다.
-
-C++ allows for arbitrary-length identifier names, so there's no reason to be terse when naming things. Use descriptive names, and be consistent in the style.
 
 C++는 식별자명에 길이를 제멋대로 입력할 수 있도록 허용하므로 이름을 지정할 때 간결하게 정할 필요가 없습니다. 서술적인 명칭을 사용하고 일관적인 스타일을 유지하기 바랍니다.
 
@@ -15,11 +11,7 @@ C++는 식별자명에 길이를 제멋대로 입력할 수 있도록 허용하�
 
 ## 스타일 가이드라인 발행하기
 
-Whatever style guidelines you establish, be sure to implement a `.clang-format` file that specifies the style you expect. While this cannot help with naming, it is particularly important for an open source project to maintain a consistent style.
-
 어떤 스타일 가이드라인을 발행하든지 `.clang-format` 파일을 작성해서 어떤 스타일을 적용할지 명확하게 명세를 작성합니다. 이 파일로는 명명 규칙을 정할 수 없지만 오픈 소스 프로젝트에서 명명 규칙에 일관적인 스타일을 유지하는 일은 특히 중요합니다.
-
-Every IDE and many editors have support for clang-format built in or easily installable with an add-in.
 
 모든 IDE와 대부분의 편집기는 clang-format 지원이 내장되어 있거나 손쉽게 확장을 설치할 수 있습니다.
 
@@ -117,8 +109,6 @@ private:
 C++11에서 널(null) 포인터를 표현하는 특별한 값으로 `nullptr`가 도입되었습니다. 이 값은 널 포인터를 나타낼 때 `0` 또는 `NULL` 대신 사용해야 합니다.
 
 ## 주석
-
-Comment blocks should use `//`, not `/* */`. Using `//` makes it much easier to comment out a block of code while debugging.
 
 주석 블럭은 `/* */` 대신 `//`를 사용해야 합니다. `//`를 사용하면 디버그를 하는 동안 코드 블럭을 주석 처리하는데 편리합니다.
 
@@ -386,8 +376,6 @@ const auto diff = s1 - s2; // diff는 아주 큰 숫자로 underflow가 발생�
 ## .hpp와 .cpp를 파일 확장자로 사용하기
 
 사실 선호도의 문제에 가깝지만 .hpp와 .cpp는 다양한 편집기와 도구에서 널리 인식되는 확장자입니다. 그래서 이 확장자를 사용하는 것이 실용적입니다. 특히 Visual Studio는 .cpp와 .cxx를 C++ 파일로 자동 인식하지만 Vim은 .cc를 C++ 파일로 인식하지 않습니다.
-
-One particularly large project ([OpenStudio](https://github.com/NREL/OpenStudio)) uses .hpp and .cpp for user-generated files and .hxx and .cxx for tool-generated files. Both are well recognized and having the distinction is helpful.
 
 어느 대형 프로젝트 ([OpenStudio](https://github.com/NREL/OpenStudio))는 .hpp와 .cpp를 사용자 생성 파일에 사용하고 .hxx와 .cxx를 도구가 생성한 파일에 사용하고 있습니다. 이 확장자 모두 잘 인식되며 구분해서 보는데 도움이 됩니다.
 

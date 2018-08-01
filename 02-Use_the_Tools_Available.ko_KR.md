@@ -165,8 +165,6 @@ LLVM 기반 도구는 컴파일 명령 데이터베이스를 출력할 수 있�
 $ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON .
 ```
 
-If you are not using a build system like that, you can consider [Build EAR](https://github.com/rizsotto/Bear) which will hook into your build system and generate a compile command database for you.
-
 만약 이런 빌드 시스템을 사용하고 있지 않다면 [Build EAR](https://github.com/rizsotto/Bear)을 고려할 수 있습니다. 이 도구를 사용하면 빌드 시스템에 연결해서 컴파일 명령어 데이터베이스를 생성할 수 있습니다.
 
 또한 CMake은 [일반 컴파일 과정](https://cmake.org/cmake/help/latest/prop_tgt/LANG_CLANG_TIDY.html)에서 `clang-tidy`라는 내장 기능을 지원합니다.
@@ -177,8 +175,6 @@ If you are not using a build system like that, you can consider [Build EAR](http
  * [clang-tidy](http://clang.llvm.org/extra/clang-tidy.html)
 
 ## 정적 분석기
-
-The best bet is the static analyzer that you can run as part of your automated build system. Cppcheck and clang meet that requirement for free options.
 
 정적 분석기의 가장 큰 장점은 자동 빌드 시스템의 일부로 구동할 수 있다는 점입니다. Cppcheck과 clang은 이 용도로 무료로 사용할 수 있습니다.
 
@@ -289,8 +285,6 @@ Valgrind와 같은 기능을 많이 제공하고 있지만 이 도구는 컴파�
 
 
 프로젝트가 사용자 정의 입력을 받는다면 퍼지 입력 실험 도구를 사용하는 것을 고려하기 바랍니다.
-
-Both of these tools use coverage reporting to find new code execution paths and try to breed novel inputs for your code. They can find crashes, hangs, and inputs you didn't know were considered valid.
 
 이 도구는 커버리지 리포트를 사용해 새로운 코드 실행 경로를 찾고 코드에 다른 방식의 입력을 시도합니다. 충돌, 응답 없음을 찾고 참으로 고려하지 않은 값이 입력으로 허용되는지 찾아냅니다.
 

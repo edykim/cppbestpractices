@@ -47,6 +47,4 @@ assert(success);
 
 ## `override`와 `final` 적절히 활용하기
 
-These keywords make it clear to other developers how virtual functions are being utilized, can catch potential errors if the signature of a virtual function changes, and can possibly [hint to the compiler]() of optimizations that can be performed.
-
 이 키워드는 다른 개발자가 어떻게 가상 함수를 활용할지 명확하게 표현하고 가상함수의 시그니처가 변경되었을 때 어떻게 잠재적 오류를 잡아낼 수 있게 합니다. 또한 [컴파일러가 최적화를 수행할 때](http://stackoverflow.com/questions/7538820/how-does-the-compiler-benefit-from-cs-new-final-keyword) 도움이 될 수 있습니다.

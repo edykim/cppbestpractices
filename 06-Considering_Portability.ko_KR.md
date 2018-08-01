@@ -2,8 +2,6 @@
 
 ## 네 형식(Type)을 알아라
 
-Most portability issues that generate warnings are because we are not careful about our types. Standard library and arrays are indexed with `size_t`. Standard container sizes are reported in `size_t`. If you get the handling of `size_t` wrong, you can create subtle lurking 64-bit issues that arise only after you start to overflow the indexing of 32-bit integers. char vs unsigned char.
-
 대부분 경고를 만드는 이식성 문제는 형식에 유의하지 않기 때문에 나타납니다. 표준 라이브러리와 배열은 `size_t`를 사용해서 색인합니다. 표준 컨테이너 크기는 `size_t`로 확인합니다. `size_t`를 잘못 다루면 32비트 정수형의 색인이 오버플로우 된 이후에 발생하는, 미묘하게 숨어있는 64비트 문제를 만들 수도 있습니다. char와 unsigned char 문제도 참고하세요.
 
 http://www.viva64.com/en/a/0010/
